@@ -32,6 +32,9 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
+                    @if (!Auth::guest())
+                        <a class="navbar-brand btn btn-primary" href="{{ url('/news') }}">News</a>
+                    @endif
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
