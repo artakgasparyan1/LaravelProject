@@ -22,7 +22,7 @@ Route::post('/user-login', 'ApiController@login');*/
 
 Route::post('/user-registration', 'ApiController@create');
 
-/*news**/
+/*  news  **/
 Route::get('/news', 'ApiController@index');
 Route::post('/store', 'ApiController@store');
 Route::get('/show/{id}', 'ApiController@show');
